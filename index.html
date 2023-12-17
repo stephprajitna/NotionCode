@@ -56,9 +56,7 @@
 </head>
 
 <body>
-<p>Click the button to open a new URL in the same window.</p>
 
-    <button onclick="openInSameWindow()">Open URL</button>
 
 	<nav class="navMenu  border">
 		<a id="about_me" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house-chimney-user" style="color: #545454;"></i> About Me<b></a>
@@ -79,7 +77,7 @@
 		}
 
 
-		function navigate(id) {
+		function navigate(id) openInSameWindow() {
 
 			if (id == 'about_me')
 				window.open("https://www.notion.so/Media-Design-Business-Portfolio-d060e6cd23564408b8d76a17e8693b96?pvs=4#b0245d6d52b54d799e4160af8c9f1f4a", '_blank').focus();
